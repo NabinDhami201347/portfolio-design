@@ -30,7 +30,7 @@ const ScrollTop = () => {
         onClick={handleScrollTop}
       >
         <span className="">
-          <TbArrowBigUp className="h-5 w-5" />
+          <TbArrowBigUp className="h-5 w-5 text-white" />
         </span>
       </button>
     </div>
