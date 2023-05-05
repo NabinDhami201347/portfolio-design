@@ -32,7 +32,7 @@ const Toggle = () => {
   }
 
   return (
-    <motion.div>
+    <div>
       {theme === "dark" ? (
         <HiSun
           onClick={() => setTheme("light")}
@@ -46,7 +46,7 @@ const Toggle = () => {
           className="cursor-pointer hover:animate-spin"
         />
       )}
-    </motion.div>
+    </div>
   );
 };
 

@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.progress-bar {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    /* background: #53BD95; */
+    background: #de1d8d;
+    transform-origin: 0%;
+  }
+  
