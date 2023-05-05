@@ -1,7 +1,9 @@
+import Toggle from "./components/Toggle";
+
 export default function Home() {
   return (
-    <main>
-      <div className="">Hello World</div>
+    <main className="w-full h-screen">
+      <Toggle />
     </main>
   );
 }
