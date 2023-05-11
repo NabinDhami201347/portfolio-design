@@ -1,6 +1,4 @@
-import Hero from "./components/Hero";
-import Post from "./components/Post";
-import Skills from "./components/Skills";
+import { Hero, Post, Skills } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +6,9 @@ export default function Home() {
       <Hero />
       <Skills />
       <Post />
+      <Skills />
+      <Post />
+      <Skills />
     </main>
   );
 }

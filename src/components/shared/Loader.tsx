@@ -1,4 +1,4 @@
-export const Loader = () => {
+const Loader = () => {
   return (
     <div className="mx-auto w-full max-w-sm rounded-md border border-blue-300 p-4 shadow">
       <div className="flex animate-pulse space-x-4">
@@ -17,3 +17,4 @@ export const Loader = () => {
     </div>
   );
 };
+export default Loader;

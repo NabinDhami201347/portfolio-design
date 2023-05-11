@@ -3,9 +3,9 @@
 import { ThemeProvider } from "next-themes";
 import { motion, useScroll } from "framer-motion";
 
-import ScrollTop from "../components/ScrollToTop";
+import ScrollTop from "../components/shared/ScrollToTop";
 
-export const Providers = ({ children }: { children: React.ReactNode }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const { scrollYProgress } = useScroll();
   return (
     <>
@@ -20,3 +20,4 @@ export const Providers = ({ children }: { children: React.ReactNode }) => {
     </>
   );
 };
+export default Provider;
