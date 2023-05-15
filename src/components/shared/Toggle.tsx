@@ -4,8 +4,6 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { HiSun, HiMoon } from "react-icons/hi";
 
-import Loader from "./Loader";
-
 const Toggle = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -15,21 +13,7 @@ const Toggle = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <div className="flex items-center justify-around flex-wrap w-4/5 mx-auto h-screen">
-        <Loader />
-        <Loader />
-        <Loader />
-        <Loader />
-        <Loader />
-        <Loader />
-        <Loader />
-        <Loader />
-      </div>
-    );
-  }
-
+  if (!mounted) return <p>🌞</p>;
   return (
     <div>
       {theme === "dark" ? (

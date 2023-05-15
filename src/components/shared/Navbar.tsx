@@ -6,6 +6,7 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
+import DropMenu from "../ui/DropMenu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -33,10 +34,7 @@ const Navbar = () => {
           {/* Right */}
           <div className="flex items-center space-x-2 ">
             <Toggle />
-            <RxHamburgerMenu
-              size={32}
-              className="p-2 dark:hover:bg-background_dark dark:bg-zinc-700 hover:bg-background transition-colors ease-in bg-zinc-100 rounded-full cursor-pointer"
-            />
+            <DropMenu />
           </div>
         </div>
       </div>
